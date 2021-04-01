@@ -21,6 +21,7 @@ body {
   line-height: 1.428571429;
   color: #333333;
   background-color: #fff;
+  padding-bottom: 1rem;
 }
 
 button {
@@ -137,6 +138,7 @@ h3 {
   color: #fff;
   font-family: 'Proxima_Nova_Bold';
   margin: 0;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -313,6 +315,10 @@ h3 {
 
 .mb-25 {
   margin-bottom: 25px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 .pt-20 {
