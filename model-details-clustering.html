@@ -72,7 +72,7 @@
 
     <section class="sub-page-title">
         <div class="container-fluid">
-            <h3>MODEL: Weather XGB Classification</h3>
+            <h3>MODEL: Mall clustering test</h3>
 
         </div>
     </section>
@@ -107,11 +107,11 @@
                                     <label for="" class="col-form-label">Model Name</label>
                                 </div>
                                 <div class="col-auto">
-                                    <input type="text" id="" class="form-control" value="Weather XGB Classification">
+                                    <input type="text" id="" class="form-control" value="Mall clustering test">
                                 </div>
                                 <div class="col-auto ml-auto">
-
-                                    <!-- <button type="button" class="btn btn-primary btn-medium">SAVE</button>
+                                    <!-- 
+                                    <button type="button" class="btn btn-primary btn-medium">SAVE</button>
                                     <a href="" type="button" class="btn btn-secondary btn-medium">CANCEL</a> -->
                                     <button type="button" class="btn btn-secondary btn-medium">EDIT</button>
                                 </div>
@@ -245,13 +245,6 @@
                                 </ul>
 
 
-                                <div class="row">
-                                    <div class="col-md-12">
-
-
-
-                                    </div>
-                                </div>
                             </div>
 
 
@@ -317,7 +310,7 @@
                                                     <label for="" class="col-form-label">Columns dropped (> 80% null)</label>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <input type="text" id="" class="form-control" disabled value="5">
+                                                    <input type="text" id="" class="form-control" disabled value="0">
                                                 </div>
 
                                             </div>
@@ -327,7 +320,7 @@
                                                     <label for="" class="col-form-label">Number of rows dropped (> 80% null)</label>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <input type="text" id="" class="form-control" disabled value="5">
+                                                    <input type="text" id="" class="form-control" disabled value="0">
                                                 </div>
 
                                             </div>
@@ -346,6 +339,7 @@
 
                                             <a type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">SHOW DATA</a>
                                         </div>
+
 
                                     </div>
                                 </div>
@@ -378,17 +372,6 @@
                                                 <h3>Parameter</h3>
                                             </div>
 
-                                            <div class="row g-3 align-items-center mb-25">
-                                                <div class="col-md-6">
-                                                    <label for="" class="col-form-label">Learning technique</label>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <select id="disabledSelect" class="form-select" disabled>
-                                                        <option>Leave One Out Encoder</option>
-                                                      </select>
-                                                </div>
-
-                                            </div>
 
                                             <div class="row g-3 align-items-center mb-25">
                                                 <div class="col-md-6">
@@ -423,7 +406,17 @@
                                                     <label for="" class="col-form-label">Number of columns encoded</label>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <input type="text" id="" class="form-control" disabled value="5">
+                                                    <input type="text" id="" class="form-control" disabled value="1">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row g-3 align-items-center mb-25">
+                                                <div class="col-md-6">
+                                                    <label for="" class="col-form-label">Clos encoded</label>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <input type="text" id="" class="form-control" disabled value="Gender">
                                                 </div>
 
                                             </div>
@@ -471,10 +464,24 @@
 
                                             <div class="row g-3 align-items-center mb-25">
                                                 <div class="col-md-3">
-                                                    <label for="" class="col-form-label">Number of Clusters</label>
+                                                    <label for="" class="col-form-label">Algorithm</label>
                                                 </div>
-                                                <div class="col-auto">
-                                                    <input type="text" id="" class="form-control" disabled value="5">
+                                                <div class="col-md-2">
+                                                    <select id="disabledSelect" class="form-select" disabled>
+                                                        <option>K-Means</option>
+                                                      </select>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row g-3 align-items-center mb-25">
+                                                <div class="col-md-3">
+                                                    <label for="" class="col-form-label">Optimal K technique</label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <select id="disabledSelect" class="form-select" disabled>
+                                                        <option>Gap statistics</option>
+                                                      </select>
                                                 </div>
 
                                             </div>
@@ -489,43 +496,11 @@
 
                                 </div>
 
-                            </div>
-
-
-
-                            <!-- K Selection Plot -->
-
-
-                            <div class="sub-card">
-
-                                <div class="card-inner-subtitle mb-25">
-                                    <h3>K Selection Plot</h3>
-                                </div>
-
-                                <div class="row">
-
-                                    <div class="col-md-6">
-                                        <div class="sub-card">
-
-                                            <img src="images/k1.jpg" class="d-block m-auto w-100" />
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="sub-card">
-
-                                            <img src="images/k2.jpg" class="d-block m-auto w-100" />
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
 
 
                             </div>
+
+
 
 
 
@@ -544,56 +519,109 @@
                     <div class="card">
                         <div class="card-body">
 
+
+                            <div class="sub-card">
+                                <div class="card-inner-subtitle mb-20 d-flex align-items-center">
+                                    <h3>Labelled dataset</h3>
+                                    <div class="ml-auto">
+
+                                        <a type="button" class="btn btn-primary btn-medium">EXPORT</a>
+
+                                    </div>
+                                </div>
+
+                                <img src="./images/prediction-re-table.png" class="w-100" />
+
+
+
+
+                            </div>
+
+
+
                             <div class="sub-card">
 
                                 <div class="card-inner-subtitle mb-25">
                                     <h3>Metrics</h3>
                                 </div>
-
                                 <div class="row">
-                                    <div class="col-md-5">
-                                        <ul class="list-group cus-list-group">
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                Base_Models
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg>
+                                    <div class="col-md-6">
+                                        <div class="sub-card">
+                                            <div class="card-inner-subtitle mb-25">
+                                                <h3>Evaluation Metrics</h3>
 
-                                                <b class="rounded-pill">GB</b>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                Base_Models_Scores
+                                            </div>
 
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <ul class="list-group cus-list-group">
+                                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                            Silhoutte
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg>
 
-                                                <b class="rounded-pill">1.0</b>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                Min_Max_scaled_Models
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg>
+                                                            <b class="rounded-pill">0.179</b>
+                                                        </li>
+                                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                            Calinski Harabasz
 
-                                                <b class="rounded-pill">minmaxGB</b>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                Min_Max_scaled_scores
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg>
 
-                                                <b class="rounded-pill">1.0</b>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                Standard_scaled_Models
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg>
+                                                            <b class="rounded-pill">38.455</b>
+                                                        </li>
+                                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                            Davies Bouldin
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg>
 
-                                                <b class="rounded-pill">standardGB</b>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                Standard_scaled_scores
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg>
+                                                            <b class="rounded-pill"></b>
+                                                        </li>
 
-                                                <b class="rounded-pill">1.0</b>
-                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="sub-card">
+                                            <div class="card-inner-subtitle mb-25">
+                                                <h3>Cluster Index</h3>
 
-                                        </ul>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <ul class="list-group cus-list-group">
+                                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                            Hopkins Result
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg>
+
+                                                            <b class="rounded-pill">0.838</b>
+                                                        </li>
+                                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                            Fit
+
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg>
+
+                                                            <b class="rounded-pill">Dataset fit for clustering</b>
+                                                        </li>
+                                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                            Optimal K Value
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg>
+
+                                                            <b class="rounded-pill"></b>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
                                     </div>
                                 </div>
+
+
+
+
 
 
 
@@ -612,9 +640,9 @@
                                         <div class="sub-card">
 
                                             <div class="card-inner-subtitle mb-25">
-                                                <h3>Multi Class ROC</h3>
+                                                <h3>Bar Chart (Cluster Distribution)</h3>
                                             </div>
-                                            <img src="./images/chart6.png" class="w-100" />
+                                            <img src="./images/chart11.jpg" class="w-100 img-400 " />
 
                                         </div>
 
@@ -624,14 +652,88 @@
                                         <div class="sub-card">
 
                                             <div class="card-inner-subtitle mb-25">
-                                                <h3>Results Comparison Image</h3>
+                                                <h3>Visualisation of Clustered Image</h3>
                                             </div>
-                                            <img src="./images/chart7.png" class="w-100" />
+                                            <img src="./images/chart12.jpg" class="w-100 img-400 " />
 
                                         </div>
 
                                     </div>
-                                    <div class="col-md-6"></div>
+
+
+                                    <div class="col-md-12">
+
+                                        <div class="sub-card">
+
+                                            <div class="card-inner-subtitle mb-25">
+                                                <h3>Feature Importance</h3>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="sub-card">
+                                                        <img src="./images/chart13.jpg" class="w-100" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="sub-card">
+                                                        <img src="./images/chart14.jpg" class="w-100" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="col-md-6">
+
+                                        <div class="sub-card">
+
+                                            <div class="card-inner-subtitle mb-25">
+                                                <h3>Parallel Co-ordinate Plots(Mean of Features)</h3>
+                                            </div>
+                                            <img src="./images/chart15.png" class="w-100 img-400 " />
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="col-md-6">
+
+                                        <div class="sub-card">
+
+                                            <div class="card-inner-subtitle mb-25">
+                                                <h3>Principle Component Analysis Plot</h3>
+                                            </div>
+                                            <img src="./images/chart16.jpg" class="w-100 img-400 " />
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="col-md-6">
+
+                                        <div class="sub-card">
+
+                                            <div class="card-inner-subtitle mb-25">
+                                                <h3>Parallel Co-ordinate Plots(All Data Points)</h3>
+                                            </div>
+                                            <img src="./images/chart17.png" class="w-100 img-400 " />
+
+                                        </div>
+
+                                    </div>
+
+
+
                                 </div>
 
                             </div>
