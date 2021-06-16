@@ -309,6 +309,21 @@ h3 {
     margin-bottom: 20px;
 }
 
+.single-page-card {
+    .card-inner-subtitle {
+        h3 {
+            font-size: 18px;
+        }
+    }
+    .sub-card {
+        .card-inner-subtitle {
+            h3 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
 // spacing
 .mb-10 {
     margin-bottom: 10px;

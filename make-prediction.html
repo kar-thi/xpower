@@ -83,28 +83,31 @@
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="" class="form-label">Prediction Name</label>
+                                        <label for="" class="form-label">Prediction Name <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" placeholder=""> </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="" class="form-label">Dataset</label>
+                                        <label for="" class="form-label">Dataset <span class="text-danger">*</span></label>
                                         <select id="exampleFormControlSelect1" class="form-select"><option _ngcontent-qnx-c51="" value="Classification">  Weather Dataset Clustering  </option><option _ngcontent-qnx-c51="" value="Regression"> Regression </option><option _ngcontent-qnx-c51="" value="Clustering"> Clustering </option></select>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="" class="form-label">Model</label>
+                                        <div class="d-flex">
+                                            <label for="" class="form-label">Model <span class="text-danger">*</span></label>
+                                            <a href="" class="d-block ml-auto">Download sample upload CSV</a>
+                                        </div>
                                         <select id="exampleFormControlSelect1" class="form-select"><option _ngcontent-qnx-c51="" value="Classification">  Weather XGB Clustering  </option><option _ngcontent-qnx-c51="" value="Regression"> Regression </option><option _ngcontent-qnx-c51="" value="Clustering"> Clustering </option></select>
                                     </div>
-                                    <a href="" class="d-block">Download sample upload CSV</a>
+
                                 </div>
 
                                 <div class="col-md-4">
 
 
                                     <div class="form-group">
-                                        <label for="" class="form-label">File *</label>
+                                        <label for="" class="form-label">File<span class="text-danger">*</span></label>
 
                                         <div class="input-group">
                                             <input type="file" class="form-control" placeholder="">
@@ -129,7 +132,7 @@
 
 
                                     <div class="pull-right">
-                                        <button type="button" class="btn btn-primary btn-medium">PREDICT</button>
+                                        <button type="button" class="btn btn-primary btn-medium">SUBMIT</button>
                                         <a href="model.html" type="button" class="btn btn-secondary btn-medium">CANCEL</a>
                                     </div>
                                 </div>

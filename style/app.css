@@ -332,6 +332,14 @@ h3 {
   margin-bottom: 20px;
 }
 
+.single-page-card .card-inner-subtitle h3 {
+  font-size: 18px;
+}
+
+.single-page-card .sub-card .card-inner-subtitle h3 {
+  font-size: 16px;
+}
+
 .mb-10 {
   margin-bottom: 10px;
 }
